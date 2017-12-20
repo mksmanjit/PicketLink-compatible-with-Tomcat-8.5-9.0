@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<fileset-config file-format-version="1.2.0" simple-config="false" sync-formatter="false">
+  <local-check-config name="maven-checkstyle-plugin check-style" location="jar:file:/C:/cygwin64/bcan-dev/manjkuma/repository/org/picketlink/picketlink-build-config/2.7.1.Final/picketlink-build-config-2.7.1.Final.jar!/picketlink-checkstyle/checkstyle.xml" type="remote" description="maven-checkstyle-plugin configuration check-style">
+    <property name="checkstyle.cache.file" value="${project_loc}/target/checkstyle-cachefile"/>
+    <property name="checkstyle.header.file" value="C:\BNAWorkspaces\.metadata\.plugins\org.eclipse.core.resources\.projects\picketlink-tomcat8.5\com.basistech.m2e.code.quality.checkstyleConfigurator\checkstyle-header-check-style.txt"/>
+  </local-check-config>
+  <fileset name="java-sources-check-style" enabled="true" check-config-name="maven-checkstyle-plugin check-style" local="true">
+    <file-match-pattern match-pattern="^src/main/java/.*\.java" include-pattern="true"/>
+  </fileset>
+</fileset-config>
